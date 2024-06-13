@@ -1,0 +1,41 @@
+
+.crypto_card {
+    background: var(--app-white);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    width: 250px;
+}
+
+.crypto_card h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--app-heading-black);
+}
+
+.crypto_card p {
+    margin: 0.625rem 0 0;
+    font-size: 1.125rem;
+    color: var(--app-text-black);
+}
+.crypto_card span{
+    margin-right: 0.25rem;
+}
+.crypto_card:hover {
+    transform: scale(1.05);
+}
+
+
+ /* responsiveness */
+ @media(max-width : 768px) {
+
+    .crypto_card h2 {
+        font-size: 1.125rem;
+    }
+
+    .crypto_card p {
+        font-size: 1rem;
+    }
+}
